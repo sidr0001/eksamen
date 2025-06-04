@@ -21,7 +21,7 @@ header {
 
 header .logo a {
   color: black;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: none;
   font-family: "Aguafina Script", cursive;
   font-weight: 400;
@@ -191,4 +191,20 @@ li {
 /******* mit design ******/
 body {
   background-color: var(--secondary-color);
+}
+/******* footer ******/
+footer {
+  background-color: #ffffff;
+  height: 18vh;
+  padding-left: 20px;
+}
+.logo {
+  color: black;
+  font-size: 2rem;
+  font-family: "Aguafina Script", cursive;
+  font-weight: 400;
+}
+.footer_link {
+  text-decoration: none;
+  color: black;
 }
