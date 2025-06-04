@@ -10,3 +10,185 @@ img {
   height: auto;
   display: block;
 }
+/*************** Menu/header *********************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+header .logo a {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Aguafina Script", cursive;
+  font-weight: 400;
+}
+header .logo a:hover {
+  color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: var(--primary-color);
+}
+@media (max-width: 800px) {
+  header {
+    display: none;
+  }
+}
+
+/*******burger*******/
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+a.active {
+  color: var(--primary-color);
+}
+/*******custom properties******/
+html {
+  --primary-color: rgb(218, 21, 21);
+  --secondary-color: rgb(255, 254, 238);
+}
+/*******fonts*******/
+.aguafina-script-regular {
+  font-family: "Aguafina Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.monoton-regular {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "Monoton", sans-serif;
+  color: var(--primary-color);
+}
+.advent-pro {
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+h2 {
+  font-family: "Advent Pro", sans-serif;
+  color: black;
+  font-weight: bold;
+}
+h3 {
+  font-family: "Advent Pro", sans-serif;
+  color: black;
+}
+.aleo {
+  font-family: "Aleo", serif;
+  font-style: normal;
+}
+p {
+  font-family: "Aleo", serif;
+  color: black;
+}
+li {
+  font-family: "Aleo", serif;
+  color: black;
+}
+/******* mit design ******/
+body {
+  background-color: var(--secondary-color);
+}
