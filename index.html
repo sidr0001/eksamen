@@ -22,6 +22,7 @@
     <link rel="icon" type="image/svg+xml" href="imgs/favicon-2.svg" />
     <title>Forside</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
 </head>
 
 <body>
@@ -44,33 +45,48 @@
         </nav>
     </header>
     <main>
-        <h1>Portfolio</h1>
-        <img src="imgs/mig_billede.webp" alt="portræt billede">
-        <p>Hej, mit navn er Simone.</p>
-        <br>
-        <p>Og velkommen til mit portfolio.</p>
-        <p>Her vil i lære mere om mig, og hvad jeg har lært og lavet på mit 1. semester af multimediedesign</p>
-        <img src="imgs/Vector_6.svg" alt="sort linje">
-        <div>
-            <h2>Hvem er jeg?</h2>
-            <p>Dyk ned i hvem jeg er og hvilke uddannelses- og erhvervserfaring jeg har. Og hvad jeg har fået ud af mit
-                1. semester på multimediedesign.</p>
-            <button class="knap" onclick="location.href='om_mig.html'">Læs mere her </button>
+        <h1 class="forside_h1">Portfolio</h1>
+        <div class="grid_1_1">
+            <div class="billede_skygge_forside">
+                <div class="skygge"></div>
+                <img src="imgs/mig_billede.webp" alt="portræt billede">
+            </div>
+            <div class="slide_tekst">
+                <h2>Hej, mit navn er Simone.</h2>
+                <h2>Og velkommen til mit portfolio.</h2>
+                <p>Her vil i lære mere om mig, og hvem jeg er og hvad jeg har lavet de sidste år i forhold til udannelse
+                    og arbejde.</p>
+                <br>
+                <p>I vil også kunne se og læse om hvad jeg har lært og lavet på mit 1. semester af multimediedesign.</p>
+            </div>
         </div>
-        <div>
-            <h2>Mine projekter</h2>
-            <p>Vi har gennemgået en masse spændende forskellige temaer på 1. semester, hvor du kan se hvilke projekter
-                jeg har lavet og hvad jeg har lært af det.</p>
-            <button class="knap" onclick="location.href='portfolio.html'">Se med her </button>
+        <img class="forside_vector" src="imgs/vector_6.svg" alt="sort linje">
+        <div class="grid_1_1">
+            <div class="midte">
+                <h2>Hvem er Simone?</h2>
+                <p class="max">Dyk ned i hvem jeg er og hvilke uddannelses- og erhvervserfaring jeg har. Og hvad jeg har
+                    fået ud af
+                    mit
+                    1. semester på multimediedesign.</p>
+                <button class="knap" onclick="location.href='om_mig.html'">Læs mere her </button>
+            </div>
+            <div class="midte">
+                <h2>Portfolio</h2>
+                <p class="max">Vi har gennemgået en masse spændende forskellige temaer på 1. semester, hvor du kan se
+                    hvilke
+                    projekter
+                    jeg har lavet og hvad jeg har lært af det.</p>
+                <button class="knap" onclick="location.href='portfolio.html'">Se med her </button>
 
+            </div>
         </div>
     </main>
     <footer>
         <h1 class="logo">SD</h1>
         <div>
-            <h2>Kontakt</h2>
-            <p>Mail: simone.dreyer@outlook.dk</p>
-            <p>Mobil: +4524473215</p>
+            <h2 class="foot_kontakt">Kontakt</h2>
+            <p class="foot_p">Mail: simone.dreyer@outlook.dk</p>
+            <p class="foot_p">Mobil: +4524473215</p>
             <a class="footer_link" href="https://www.linkedin.com/in/simone-dreyer-907024301/">LinkedIn: Simone
                 Dreyer</a>
         </div>

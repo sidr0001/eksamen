@@ -23,6 +23,7 @@
 
     <title>Tema 03</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
 </head>
 
 <body>
@@ -45,59 +46,67 @@
         </nav>
     </header>
     <main>
-        <div>
-            <a href="tema2.html">Forrige</a>
-            <a href="tema4.html">Næste</a>
+        <div class="flex_frem_tilbage">
+            <a class="frem_tilbage" href="tema2.html">Forrige</a>
+            <a class="frem_tilbage" href="tema4.html">Næste</a>
         </div>
-        <h1>Tema 03</h1>
+        <h1 class="sort_logo">Tema 03</h1>
         <h1>Grundlæggende UX/UI</h1>
-        <div>
+        <div class="grid_1_1">
             <img src="imgs/rejse_com.webp" alt="compter">
-            <h2>Introduktion</h2>
-            <p>I dette forløb fik vi frie rammer til at vælge et emne, som vi senere skulle udvikle et emnesite
-                omkring.Gennem
-                research og idéudvikling lærte vi at definere et klart emne, formål, identificere målgruppen og
-                udarbejde og user
-                stories.</p>
-            <button class="knap"
-                onclick="location.href='https://simoneddesign.dk/kea/03_ux/01_kodet_site/index.html'">Se siden
-                her </button>
+            <div class="t3_introtekst">
+                <h2>Introduktion</h2>
+                <p>I dette forløb fik vi frie rammer til at vælge et emne, som vi senere skulle udvikle et emnesite
+                    omkring. Gennem
+                    research og idéudvikling lærte vi at definere et klart emne, formål, identificere målgruppen og
+                    udarbejde og user
+                    stories.</p>
+                <button class="knap"
+                    onclick="location.href='https://simoneddesign.dk/kea/03_ux/01_kodet_site/index.html'">Se siden
+                    her </button>
+            </div>
         </div>
-        <h2>Fremgangsmåde og processer</h2>
-        <div>
+        <h2 class="h2_tema">Fremgangsmåde og processer</h2>
+        <div class="grid_1_1">
             <img src="imgs/moodboard_rejse.webp" alt="Billeder">
-            <p>Her valgte jeg at lave en rejse hjemmeside, med inspiration fra de rejser jeg har været på gennem mit
+            <p class="t3_tekst1">Her valgte jeg at lave en rejse hjemmeside, med inspiration fra de rejser jeg har været
+                på gennem mit
                 liv. Her havde jeg
                 en masse billede og erfaring jeg kunne inkludere på hjemmesiden.
             </p>
         </div>
-        <div>
-            <p>Derudover arbejdede vi med farver og typografi, som skulle understøtte både sidens æstetik og
+        <div class="grid_1_1">
+            <p class="t3_tekst2">Derudover arbejdede vi med farver og typografi, som skulle understøtte både sidens
+                æstetik og
                 brugervenlighed. Vi blev
                 introduceret til centrale designkonventioner og gestaltprincipper - herunder lovene om nærhed, lighed,
                 kontinuitet og
-                lukkethed.Disse principper gav os en dybere forståelse for, hvordan visuelle elementer opfattes, og
+                lukkethed. Disse principper gav os en dybere forståelse for, hvordan visuelle elementer opfattes, og
                 hvordan
                 man kan
                 skabe mere intuitive og brugervenlige designs.</p>
             <img src="imgs/styletile_rejse.webp" alt="Styletiles">
         </div>
-        <h2>Hvad har jeg lært på dette tema?</h2>
-        <p>Gennem dette tema har jeg lært forskellige metoder og tests, som kan bruges til dataindsamling - både i
-            researchfasen og
-            under designprocessen.Jeg har blandt andet arbejdet med user stories, tænke-højt-test og 5-second test for
-            at indsamle
-            værdifuld feedback og indsigt.
-            Derudover har jeg udarbejdet moodboards og styletiles, og lært at skabe klikbare prototyper i Figma. Det gør
-            det muligt
-            at teste brugervenlighed og designvalg, inden selve kodningen går i gang.</p>
+        <div class="bund_temaer">
+            <h2>Hvad har jeg lært på dette tema?</h2>
+            <p>Gennem dette tema har jeg lært forskellige metoder og tests, som kan bruges til dataindsamling - både i
+                researchfasen og
+                under designprocessen. Jeg har blandt andet arbejdet med user stories, tænke-højt-test og 5-second test
+                for
+                at indsamle
+                værdifuld feedback og indsigt.
+                Derudover har jeg udarbejdet moodboards og styletiles, og lært at skabe klikbare prototyper i Figma. Det
+                gør
+                det muligt
+                at teste brugervenlighed og designvalg, inden selve kodningen går i gang.</p>
+        </div>
     </main>
     <footer>
         <h1 class="logo">SD</h1>
         <div>
-            <h2>Kontakt</h2>
-            <p>Mail: simone.dreyer@outlook.dk</p>
-            <p>Mobil: +4524473215</p>
+            <h2 class="foot_kontakt">Kontakt</h2>
+            <p class="foot_p">Mail: simone.dreyer@outlook.dk</p>
+            <p class="foot_p">Mobil: +4524473215</p>
             <a class="footer_link" href="https://www.linkedin.com/in/simone-dreyer-907024301/">LinkedIn: Simone
                 Dreyer</a>
         </div>
