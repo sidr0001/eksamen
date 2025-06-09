@@ -22,6 +22,7 @@
     <link rel="icon" type="image/svg+xml" href="imgs/favicon-2.svg" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
 </head>
 
 <body>
@@ -44,40 +45,43 @@
         </nav>
     </header>
     <main>
-        <h1>Portfolio</h1>
-        <p>På mit første semester som multimediedesigner har vi arbejdet med forskellige temaer, hvor jeg har tilegnet
+        <h1 class="portfolio_h1">Portfolio</h1>
+        <p class="midte">På mit første semester som multimediedesigner har vi arbejdet med forskellige temaer, hvor jeg
+            har tilegnet
             mig
             grundlæggende metoder og værktøjer inden for webudvikling, UX/UI-design, animation og indholdsproduktion.Gå
             på
             opdagelse i hvert tema, og læs mere om min læring, arbejdsproces og de løsninger, jeg har skabt undervejs.
         </p>
-        <div>
-            <h2>Tema 02</h2>
-            <h3>Grundlæggende web</h3>
-            <button class="knap" onclick="location.href='tema2.html'">Se mere her</button>
-        </div>
-        <div>
-            <h2>Tema 03</h2>
-            <h3>Grundlæggende UX/UI</h3>
-            <button class="knap" onclick="location.href='tema3.html'">Se mere her</button>
-        </div>
-        <div>
-            <h2>Tema 04</h2>
-            <h3>Grundlæggende animation</h3>
-            <button class="knap" onclick="location.href='tema4.html'">Se mere her</button>
-        </div>
-        <div>
-            <h2>Tema 05</h2>
-            <h3>Grundlæggende indhold</h3>
-            <button class="knap" onclick="location.href='tema5.html'">Se mere her</button>
+        <div class="grid_2_2">
+            <div class="t_2">
+                <h2>Tema 02</h2>
+                <h3>Grundlæggende web</h3>
+                <button class="knap" onclick="location.href='tema2.html'">Se mere her</button>
+            </div>
+            <div class="t_3">
+                <h2>Tema 03</h2>
+                <h3>Grundlæggende UX/UI</h3>
+                <button class="knap" onclick="location.href='tema3.html'">Se mere her</button>
+            </div>
+            <div class="t_4">
+                <h2>Tema 04</h2>
+                <h3>Grundlæggende animation</h3>
+                <button class="knap" onclick="location.href='tema4.html'">Se mere her</button>
+            </div>
+            <div class="t_5">
+                <h2>Tema 05</h2>
+                <h3>Grundlæggende indhold</h3>
+                <button class="knap" onclick="location.href='tema5.html'">Se mere her</button>
+            </div>
         </div>
     </main>
     <footer>
         <h1 class="logo">SD</h1>
         <div>
-            <h2>Kontakt</h2>
-            <p>Mail: simone.dreyer@outlook.dk</p>
-            <p>Mobil: +4524473215</p>
+            <h2 class="foot_kontakt">Kontakt</h2>
+            <p class="foot_p">Mail: simone.dreyer@outlook.dk</p>
+            <p class="foot_p">Mobil: +4524473215</p>
             <a class="footer_link" href="https://www.linkedin.com/in/simone-dreyer-907024301/">LinkedIn: Simone
                 Dreyer</a>
         </div>

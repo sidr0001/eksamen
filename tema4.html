@@ -23,6 +23,7 @@
 
     <title>Tema 04</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
 </head>
 
 <body>
@@ -45,55 +46,63 @@
         </nav>
     </header>
     <main>
-        <div>
-            <a href="tema3.html">Forrige</a>
-            <a href="tema5.html">Næste</a>
+        <div class="flex_frem_tilbage">
+            <a class="frem_tilbage" href="tema3.html">Forrige</a>
+            <a class="frem_tilbage" href="tema5.html">Næste</a>
         </div>
-        <h1>Tema 04</h1>
+        <h1 class="sort_logo">Tema 04</h1>
         <h1>Grundlæggende animation</h1>
-        <div>
+        <div class="grid_1_1">
             <img src="imgs/spil_com.webp" alt="compter">
-            <h2>Introduktion</h2>
-            <p>I tema 4 arbejdede vi med at udvikle et simpelt, animeret spil med faldende gode og dårlige elementer -
-                programmeret i
-                JavaScript.
-                Her fandt jeg på spillet Stive Lis.</p>
-            <button class="knap"
-                onclick="location.href='https://simoneddesign.dk/kea/04_animation/website/spil.html'">Se siden
-                her </button>
+            <div class="t4_introtekst">
+                <h2>Introduktion</h2>
+                <p>I tema 4 arbejdede vi med at udvikle et simpelt, animeret spil med faldende gode og dårlige elementer
+                    -
+                    programmeret i
+                    JavaScript.
+                    Her fandt jeg på spillet Stive Lis.</p>
+                <button class="knap"
+                    onclick="location.href='https://simoneddesign.dk/kea/04_animation/website/spil.html'">Se siden
+                    her </button>
+            </div>
         </div>
-        <h2>Fremgangsmåde og processer</h2>
-        <div>
+        <h2 class="h2_tema">Fremgangsmåde og processer</h2>
+        <div class="grid_1_1">
             <img src="imgs/skitse_spil.webp" alt="tegninger">
-            <p>I dette tema lavede jeg spillet Stive Lis, hvor det handler om at Lis skal forblive fuld og have en sjov
+            <p class="t4_tekst1">I dette tema lavede jeg spillet Stive Lis, hvor det handler om at Lis skal forblive
+                fuld og have en sjov
                 aften på baren.
                 Derfor handler spillet om Lis skal have mere at drikke og derfor ikke vand, som jeg synes kunne være et
                 sjovt spil for
                 unge.
             </p>
         </div>
-        <div>
-            <p>Forløbet startede med skitser og tegne i hånden, hvorefter vi brugte Adobe Illustrator til at rentegne og
+        <div class="grid_1_1">
+            <p class="t4_tekst2">Forløbet startede med skitser og tegne i hånden, hvorefter vi brugte Adobe Illustrator
+                til at rentegne og
                 skabe spillets
                 visuelle elementer.
                 Vi anvendte State Machine-diagrammer til at planlægge spillets funktionalitet og strukturere de
                 nødvendige
                 JavaScript-funktioner, så animationerne kunne køre korrekt.</p>
-            <img src="imgs/aktivitetsdiagram.drawio-kopi.webp" alt="aktivitetsdiagram">
+            <img src="imgs/aktivitetsdiagram.drawio-kopi2.webp" alt="aktivitetsdiagram">
         </div>
-        <h2>Hvad har jeg lært på dette tema?</h2>
-        <p>I dette tema har jeg lært at udarbejde skitser og rentegne dem i Adobe Illustrator.Jeg har arbejdet meget
-            mere med
-            JavaScript-programmering baseret på aktivitets- og state machine-diagrammer for at strukturere spillets
-            funktioner.
-            Derudover har jeg anvendt CSS til både positionering og animation, hvilket gav spillet liv og bevægelse.</p>
+        <div class="bund_temaer">
+            <h2>Hvad har jeg lært på dette tema?</h2>
+            <p>I dette tema har jeg lært at udarbejde skitser og rentegne dem i Adobe Illustrator.Jeg har arbejdet meget
+                mere med
+                JavaScript-programmering baseret på aktivitets- og state machine-diagrammer for at strukturere spillets
+                funktioner.
+                Derudover har jeg anvendt CSS til både positionering og animation, hvilket gav spillet liv og bevægelse.
+            </p>
+        </div>
     </main>
     <footer>
         <h1 class="logo">SD</h1>
         <div>
-            <h2>Kontakt</h2>
-            <p>Mail: simone.dreyer@outlook.dk</p>
-            <p>Mobil: +4524473215</p>
+            <h2 class="foot_kontakt">Kontakt</h2>
+            <p class="foot_p">Mail: simone.dreyer@outlook.dk</p>
+            <p class="foot_p">Mobil: +4524473215</p>
             <a class="footer_link" href="https://www.linkedin.com/in/simone-dreyer-907024301/">LinkedIn: Simone
                 Dreyer</a>
         </div>
